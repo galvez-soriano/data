@@ -1,2 +1,2 @@
 # data
-Here I will upload data from my research that is publicly available
+Inthis repository I will upload (publicly available) data from my research.
