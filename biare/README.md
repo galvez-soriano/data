@@ -10,4 +10,5 @@ The questionnaires can be download from the following links:
 - BIARE 2014 questionnaire: https://www.inegi.org.mx/contenidos/investigacion/bienestar/ampliado/doc/fd_mcs2014_biare_ampliado.pdf
 
 Classification for Occupations (SINCO): https://www.snieg.mx/DocumentacionPortal/Normatividad/historica/sinco-2012.pdf
-ISCO: https://www.ilo.org/public/english/bureau/stat/isco/docs/resol08.pdf
+
+International Standard Classification of Occupations (ISCO): https://www.ilo.org/public/english/bureau/stat/isco/docs/resol08.pdf
