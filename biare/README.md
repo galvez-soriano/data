@@ -12,3 +12,5 @@ The questionnaires can be download from the following links:
 Classification for Occupations (SINCO): https://www.snieg.mx/DocumentacionPortal/Normatividad/historica/sinco-2012.pdf
 
 International Standard Classification of Occupations (ISCO): https://www.ilo.org/public/english/bureau/stat/isco/docs/resol08.pdf
+
+NAICS classification: https://www.census.gov/naics/?48967
