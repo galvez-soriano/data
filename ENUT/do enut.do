@@ -3,13 +3,13 @@
 *========================================================================*
 clear
 set more off
-gl data= "https://raw.githubusercontent.com/galvez-soriano/data/main"
+gl data= "https://raw.githubusercontent.com/galvez-soriano/data/main/ENUT"
 *gl base= "C:\Users\galve\Documents\Lupita\NewBase"
 *gl doc= "C:\Users\galve\Documents\Lupita\DocLupita"
 *========================================================================*
 /* 2009 */
 *========================================================================*
-use "$data\2009\tsdem.dta", clear
+use "$data/2009/tsdem.dta", clear
 gen str id_hogar=control+viv_sel+hogar
 gen str id_ind=control+viv_sel+hogar+n_ren
 
@@ -21,6 +21,6 @@ p3_7_10 p3_7_11 p3_8_1 p3_8_2 p3_9_1 p3_9_2 p3_9_3 p3_9_4 p3_10 p3_11, replace
 *========================================================================*
 /* 2019 */
 *========================================================================*
-use "$data\2019\tsdem.dta", clear
+use "$data/2019/tsdem.dta", clear
 gen str id_hogar=control+viv_sel+hogar
 gen str id_ind=control+viv_sel+hogar+n_ren
