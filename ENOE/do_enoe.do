@@ -7,8 +7,9 @@ clear
 set more off
 gl data= "https://raw.githubusercontent.com/galvez-soriano/data/main/ENOE"
 gl base= "C:\Users\T43969\Documents\Pensions\ENOE"
+gl base2= "C:\Users\T43969\Documents\Pensions\Base"
 *========================================================================*
-/*
+
 local start=0
 local end=0
 foreach x in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24{
@@ -16,11 +17,11 @@ foreach x in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24{
 	local start=`end'+1
 	local end=16300*`x'
 	keep in `start'/`end'
-	save "$base\coe1t105_`x'.dta", replace
+	save "$base2\coe1t105_`x'.dta", replace
 }
 use "$base\COE1T105.dta", clear
 keep in 293401/l
-save "$base\coe1t105_25.dta", replace
+save "$base2\coe1t105_25.dta", replace
 
 local start=0
 local end=0
@@ -29,11 +30,11 @@ foreach x in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17{
 	local start=`end'+1
 	local end=16300*`x'
 	keep in `start'/`end'
-	save "$base\coe2t105_`x'.dta", replace
+	save "$base2\coe2t105_`x'.dta", replace
 }
 use "$base\COE2T105.dta", clear
 keep in 293401/l
-save "$base\coe2t105_18.dta", replace
+save "$base2\coe2t105_18.dta", replace
 
 local start=0
 local end=0
@@ -42,11 +43,11 @@ foreach x in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19{
 	local start=`end'+1
 	local end=16300*`x'
 	keep in `start'/`end'
-	save "$base\sdemt105_`x'.dta", replace
+	save "$base2\sdemt105_`x'.dta", replace
 }
 use "$base\SDEMT105.dta", clear
 keep in 293401/l
-save "$base\sdemt105_20.dta", replace
+save "$base2\sdemt105_20.dta", replace
 
 foreach x in 105 205 305 405 ///
 106 206 306 406 ///
@@ -57,11 +58,11 @@ foreach x in 105 205 305 405 ///
 
 use "$base\HOGT`x'.dta", clear
 keep in 1/75000
-save "$base\hogt`x'_1.dta", replace
+save "$base2\hogt`x'_1.dta", replace
 
 use "$base\HOGT`x'.dta", clear
 keep in 75001/l
-save "$base\hogt`x'_2.dta", replace
+save "$base2\hogt`x'_2.dta", replace
 }
 
 */
