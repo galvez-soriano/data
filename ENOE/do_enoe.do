@@ -11,28 +11,59 @@ gl base= "C:\Users\T43969\Documents\Pensions\ENOE"
 /*
 local start=0
 local end=0
-foreach x in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18{
-	use "$base\COE1T112.dta", clear
+foreach x in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24{
+	use "$base\COE1T105.dta", clear
 	local start=`end'+1
 	local end=16300*`x'
 	keep in `start'/`end'
-	save "$base\coe1t112_`x'.dta", replace
+	save "$base\coe1t105_`x'.dta", replace
 }
-use "$base\COE1T112.dta", clear
+use "$base\COE1T105.dta", clear
 keep in 293401/l
-save "$base\coe1t112_19.dta", replace
+save "$base\coe1t105_25.dta", replace
+
 local start=0
 local end=0
-foreach x in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18{
-	use "$base\COE1T114.dta", clear
+foreach x in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17{
+	use "$base\COE2T105.dta", clear
 	local start=`end'+1
-	local end=16400*`x'
+	local end=16300*`x'
 	keep in `start'/`end'
-	save "$base\coe1t114_`x'.dta", replace
+	save "$base\coe2t105_`x'.dta", replace
 }
-use "$base\COE1T114.dta", clear
-keep in 295201/l
-save "$base\coe1t114_19.dta", replace
+use "$base\COE2T105.dta", clear
+keep in 293401/l
+save "$base\coe2t105_18.dta", replace
+
+local start=0
+local end=0
+foreach x in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19{
+	use "$base\SDEMT105.dta", clear
+	local start=`end'+1
+	local end=16300*`x'
+	keep in `start'/`end'
+	save "$base\sdemt105_`x'.dta", replace
+}
+use "$base\SDEMT105.dta", clear
+keep in 293401/l
+save "$base\sdemt105_20.dta", replace
+
+foreach x in 105 205 305 405 ///
+106 206 306 406 ///
+107 207 307 407 ///
+108 208 308 408 ///
+109 209 309 409 ///
+110 210 310 410 {
+
+use "$base\HOGT`x'.dta", clear
+keep in 1/75000
+save "$base\hogt`x'_1.dta", replace
+
+use "$base\HOGT`x'.dta", clear
+keep in 75001/l
+save "$base\hogt`x'_2.dta", replace
+}
+
 */
 *========================================================================*
 use "$data/2012/coe1t112_1.dta", clear
